@@ -1,0 +1,605 @@
+{
+  "graphs": {
+    "79ca637b": "Melee",
+    "f675ce88": "Talents"
+  },
+  "nodes": {
+    "2fa3745c": [
+      "damage_buff_on_low_health"
+    ],
+    "fba94676": [
+      "NewEntity"
+    ],
+    "407cc025": [
+      "health_in_range"
+    ],
+    "09bc82fb": [
+      "upgrade_effect_reduced_seize_cost"
+    ],
+    "ba83a29d": [
+      "custom_upgrade_ability_dmg_buff_per_ua_charge"
+    ],
+    "35b91af9": [
+      "upgrade_entity_fodder_killed_by_seized_revive"
+    ],
+    "c1c3c17f": [
+      "PropogateSEtoNearbyNPC"
+    ],
+    "21755836": [
+      "upgrade_entity_ua_reduces_shield_heatAura_cost"
+    ],
+    "8202a1dd": [
+      "player_health_in_range"
+    ],
+    "dfaaa86f": [
+      "custom_upgrade_melee_dmg_buff_per_ua_charge"
+    ],
+    "d4c6fff5": [
+      "PropogateToEnemy"
+    ],
+    "3224b9fa": [
+      "flurry_dodge_attack"
+    ],
+    "d2acd13b": [
+      "flurry_unlock_2"
+    ],
+    "3eeeeb81": [
+      "flurry_1_a"
+    ],
+    "4971f1f1": [
+      "flurry_1_a_1"
+    ],
+    "eadbb1bc": [
+      "flurry_2_a"
+    ],
+    "984f477b": [
+      "flurry_3"
+    ],
+    "4763d7d7": [
+      "flurry_3_a"
+    ],
+    "4863d96a": [
+      "flurry_3_b"
+    ],
+    "4963dafd": [
+      "flurry_3_c"
+    ],
+    "4263cff8": [
+      "flurry_3_d"
+    ],
+    "9d4f4f5a": [
+      "flurry_4"
+    ],
+    "cd8bb11a": [
+      "slash_1"
+    ],
+    "e09f4bba": [
+      "slash_1_a"
+    ],
+    "cc8baf87": [
+      "slash_2"
+    ],
+    "4816c72b": [
+      "slash_2_a"
+    ],
+    "effc0d6a": [
+      "slash_1_a_1"
+    ],
+    "eefc0bd7": [
+      "slash_1_a_2"
+    ],
+    "edfc0a44": [
+      "slash_1_a_3"
+    ],
+    "43fd7f77": [
+      "slash_2_a_1"
+    ],
+    "44fd810a": [
+      "slash_2_a_2"
+    ],
+    "cb8badf4": [
+      "slash_3"
+    ],
+    "ca8bac61": [
+      "slash_4"
+    ],
+    "3acb1741": [
+      "slice_1"
+    ],
+    "a9dcad21": [
+      "slice_1_a"
+    ],
+    "f5dd9d91": [
+      "slice_1_a_1"
+    ],
+    "37cb1288": [
+      "slice_2"
+    ],
+    "38cb141b": [
+      "slice_3"
+    ],
+    "b4ca6f77": [
+      "slice_3_a"
+    ],
+    "3dcb1bfa": [
+      "slice_4"
+    ],
+    "f775779a": [
+      "slice_4_a"
+    ],
+    "3ecb1d8d": [
+      "slice_5"
+    ],
+    "567806b5": [
+      "slice_5_a"
+    ],
+    "c21cf51d": [
+      "slice_6_twisted"
+    ],
+    "a384bb00": [
+      "crush_1"
+    ],
+    "42c8d464": [
+      "crush_1_a"
+    ],
+    "f2aa2710": [
+      "crush_1_a_1"
+    ],
+    "b655a84e": [
+      "wf_169229ef608e719c"
+    ],
+    "45c8d91d": [
+      "crush_1_b"
+    ],
+    "c6be2a55": [
+      "crush_1_b_1"
+    ],
+    "a684bfb9": [
+      "crush_2"
+    ],
+    "281dad26": [
+      "drill_1"
+    ],
+    "887b190e": [
+      "drill_1_a"
+    ],
+    "8c7f2e96": [
+      "drill_1_a_1"
+    ],
+    "877b177b": [
+      "drill_1_b"
+    ],
+    "a0eb5f2c": [
+      "wf_6511ba5070f1a380"
+    ],
+    "317ca5c7": [
+      "drill_1_b_1"
+    ],
+    "271dab93": [
+      "drill_2"
+    ],
+    "e0a6c049": [
+      "extend_1"
+    ],
+    "816b2ad9": [
+      "extend_1_a"
+    ],
+    "3193b4d9": [
+      "extend_1_a_1"
+    ],
+    "7e6b2620": [
+      "extend_1_b"
+    ],
+    "7ffa4cf4": [
+      "extend_1_b_1"
+    ],
+    "dda6bb90": [
+      "extend_2"
+    ],
+    "d23d1183": [
+      "bludgeon_1"
+    ],
+    "d33d1316": [
+      "bludgeon_2"
+    ],
+    "d43d14a9": [
+      "bludgeon_3"
+    ],
+    "d53d163c": [
+      "bludgeon_4"
+    ],
+    "d63d17cf": [
+      "bludgeon_5"
+    ],
+    "f2646cb6": [
+      "cleave_unlock_1"
+    ],
+    "130ec910": [
+      "cleave_2"
+    ],
+    "140ecaa3": [
+      "cleave_3"
+    ],
+    "190ed282": [
+      "cleave_4"
+    ],
+    "1a0ed415": [
+      "cleave_5"
+    ],
+    "c42f1984": [
+      "split_unlock_1"
+    ],
+    "057f2952": [
+      "split_2"
+    ],
+    "014d6fe6": [
+      "wf_1e596234ccd7ff9b"
+    ],
+    "067f2ae5": [
+      "split_3"
+    ],
+    "ff7f1fe0": [
+      "split_4"
+    ],
+    "007f2173": [
+      "split_5"
+    ],
+    "c10f8d00": [
+      "bludgeon_uppercut_1"
+    ],
+    "c40f91b9": [
+      "bludgeon_uppercut_2"
+    ],
+    "c30f9026": [
+      "bludgeon_uppercut_3"
+    ],
+    "c60f94df": [
+      "bludgeon_uppercut_4"
+    ],
+    "c50f934c": [
+      "bludgeon_uppercut_5"
+    ],
+    "0f32dbfb": [
+      "cleave_spin_unlock_1"
+    ],
+    "da6a24c7": [
+      "cleave_spin_2"
+    ],
+    "d96a2334": [
+      "cleave_spin_3"
+    ],
+    "d86a21a1": [
+      "cleave_spin_4"
+    ],
+    "d76a200e": [
+      "cleave_spin_5"
+    ],
+    "8062628b": [
+      "split_alt_1"
+    ],
+    "8162641e": [
+      "split_alt_2"
+    ],
+    "826265b1": [
+      "split_alt_3"
+    ],
+    "205d8960": [
+      "wf_c110b7bc4e9c0a8d"
+    ],
+    "83626744": [
+      "split_alt_4"
+    ],
+    "846268d7": [
+      "split_alt_5"
+    ],
+    "f226cafe": [
+      "wf_18072ac111eed9a4"
+    ],
+    "299af5b1": [
+      "flurry"
+    ],
+    "dcb24106": [
+      "wf_26233d637d4f1592"
+    ],
+    "cb73e8ea": [
+      "slash"
+    ],
+    "4c1e2d03": [
+      "wf_fdf43221c2702f88"
+    ],
+    "6789b051": [
+      "slice"
+    ],
+    "86bbd26e": [
+      "wf_121c3c7240046ea9"
+    ],
+    "c4a2a4d4": [
+      "crush"
+    ],
+    "0bb70d73": [
+      "wf_bd7f1a673847189b"
+    ],
+    "1a78c49e": [
+      "drill"
+    ],
+    "26cdfff9": [
+      "wf_e64f1ff3e93cbe97"
+    ],
+    "aa7d7949": [
+      "extend"
+    ],
+    "b8148a5c": [
+      "wf_b9e8b1ede4d080bf"
+    ],
+    "ae2b7c5f": [
+      "bludgeon"
+    ],
+    "c05d0344": [
+      "wf_0f4c93b314b4308c"
+    ],
+    "e83c6ac9": [
+      "cleave"
+    ],
+    "f2f23f3f": [
+      "wf_b9527e35c6017f81"
+    ],
+    "87b82de3": [
+      "split"
+    ],
+    "0096b24d": [
+      "wf_1e32e6c500984483"
+    ],
+    "a9c8a6d4": [
+      "bludgeon_uppercut"
+    ],
+    "493fa42e": [
+      "wf_2c00a0d4a7807fa7"
+    ],
+    "fa6b8baa": [
+      "cleave_spin"
+    ],
+    "d5880790": [
+      "wf_3315d8132adbbfbd"
+    ],
+    "c25e131c": [
+      "split_triple"
+    ],
+    "aadf4bfc": [
+      "gate_secondary_category"
+    ],
+    "e4ceb5af": [
+      "gate_combo_ender_category"
+    ],
+    "79ca637b": [
+      "melee"
+    ],
+    "47b7a9e7": [
+      "t_108_charged_push_shield_bash_spread_builddown"
+    ],
+    "643910cb": [
+      "t_112_perfect_dodge_recovers_small_amount_ability_res"
+    ],
+    "0e99f261": [
+      "t_17_execution_range_up"
+    ],
+    "f7dc3de9": [
+      "t_120_enemies_with_vengeance_drop_more_health"
+    ],
+    "e8b63042": [
+      "t_13_summon_heal_on_execution"
+    ],
+    "6e6cd248": [
+      "t_30_ultimate_ability_charge_inc"
+    ],
+    "5d6e0ad4": [
+      "t_119_ua_drop_chance_from_combat_ability_kills"
+    ],
+    "d929eded": [
+      "t_117_combat_ability_dmg_up_unused_ua_charge"
+    ],
+    "4cd35fb2": [
+      "t_65_ultimate_ability_charge_inc"
+    ],
+    "5fd439ba": [
+      "t_118_crit_chance_up_combat_abilities_unused_ua"
+    ],
+    "bb4fcf09": [
+      "t_2_ua_charge_dec_shield_aura_cost"
+    ],
+    "9f6c5e49": [
+      "t_45_inc_crit_chance_seized_enemy_active"
+    ],
+    "f4bc1cc2": [
+      "t_115_bloodlust_extended"
+    ],
+    "27baa48a": [
+      "t_53_deactivate_shield_heataura_aoe_blast"
+    ],
+    "eccaead5": [
+      "t_11_fodders_killed_by_seized_revive_as_ally"
+    ],
+    "766978f3": [
+      "t_10_seize_enemies_low_hp_cost_less_ua_charge"
+    ],
+    "6468ffd9": [
+      "t_4_summons_heal_with_hp_pickup"
+    ],
+    "7f95eae4": [
+      "t_8_crit_chnc_up_per_summon"
+    ],
+    "4990d19e": [
+      "t_15_dmg_increas_from_status_ailment"
+    ],
+    "538b995e": [
+      "t_68_longer_faltered_state"
+    ],
+    "c8da7980": [
+      "t_116_bloodlust_up_neg_damage_during"
+    ],
+    "b83ab585": [
+      "wf_5721202a7c4119ba"
+    ],
+    "607ced77": [
+      "t_333_hiss_power"
+    ],
+    "ec696320": [
+      "t_20_melee_dmg_up_from_dash"
+    ],
+    "553d1979": [
+      "t_101_combat_ability_falter_up"
+    ],
+    "dba33d09": [
+      "t_110_airborne_melee_dmg_up_s"
+    ],
+    "1c7969d1": [
+      "wf_5c988df3c9a56bb2"
+    ],
+    "73950ddf": [
+      "t_0_bloodlust"
+    ],
+    "3728b868": [
+      "t_12_summon_dmg_up_when_airborne"
+    ],
+    "942f6cdb": [
+      "t_63_incresed_dxp_from_every_activity"
+    ],
+    "651df79a": [
+      "t_107_enemies_killed_by_summons_drop_extra_healing"
+    ],
+    "173f9662": [
+      "t_48_successive_melee_hits_same_enemy_chance_drop_healing"
+    ],
+    "5ce189d3": [
+      "t_37_vengeance"
+    ],
+    "634bcaa6": [
+      "t_18_backstab_dmg_up"
+    ],
+    "fb83026c": [
+      "t_38_crit_chnc_up_on_execution"
+    ],
+    "81f54213": [
+      "t_104_bloodlust_up_healing_on_melee_dmg"
+    ],
+    "31599479": [
+      "t_43_res_rec_up_on_low_hp"
+    ],
+    "d3934dea": [
+      "t_113_perfect_dodge_recovers_small_health"
+    ],
+    "ffc645f4": [
+      "wf_40408a0b4ffb6f86"
+    ],
+    "a94d001b": [
+      "wf_98c2e8d872fb8ab1"
+    ],
+    "fa115354": [
+      "t_122_shield_parry"
+    ],
+    "e8f5c34d": [
+      "t_9_turret_astral_construct_explode_on_death"
+    ],
+    "5f77e6e4": [
+      "t_14_shield_activate_fatal_damage"
+    ],
+    "41ebe61a": [
+      "t_24_heat_aura_after_perfect_dodge_explosion"
+    ],
+    "91b3e427": [
+      "t_102_bloodlust_up_ability_recovery"
+    ],
+    "10d1b187": [
+      "t_6_chance_drop_ua_heavies_by_summons"
+    ],
+    "2c7f2173": [
+      "t_44_ability_res_rec_up_from_seized"
+    ],
+    "75d824f9": [
+      "t_41_absorb_health_further"
+    ],
+    "22228670": [
+      "t_33_ha_vulnerability_to_fire"
+    ],
+    "17c6d370": [
+      "t_58_ability_res_regen_in_ga"
+    ],
+    "77fee0b3": [
+      "t_7_melee_dmg_up_per_summon"
+    ],
+    "bced26c9": [
+      "t_100_flamewave_damage_upgrade"
+    ],
+    "f856e207": [
+      "t_62_ability_res_regen_basic"
+    ],
+    "3619d25c": [
+      "t_106_more_falter_when_hp_full"
+    ],
+    "978aaae2": [
+      "t_5_hunter_mark"
+    ],
+    "1c1ea0a4": [
+      "t_121_add_extra_charge_to_retaliate"
+    ],
+    "9aeace1f": [
+      "t_111_bloodlust_up_summons_up"
+    ],
+    "94ca98cd": [
+      "t_16_backstab_res_rec_up"
+    ],
+    "24767ac8": [
+      "t_3_active_turrets_count_up"
+    ],
+    "dbe5e552": [
+      "t_1_summon_life_time_up"
+    ],
+    "c7e5ec0e": [
+      "t_39_dmg_from_dodge_attacks"
+    ],
+    "3d4dd492": [
+      "t_114_neg_damage_taken_near_summoned_allies"
+    ],
+    "f6a69642": [
+      "t_103_retaliate"
+    ],
+    "95690585": [
+      "t_70_dash_duration"
+    ],
+    "a98f7674": [
+      "wf_00f324a678f3fd94"
+    ],
+    "c86ba0b8": [
+      "t_60_perfect_dodge"
+    ],
+    "9b9289b3": [
+      "gates"
+    ],
+    "70cc97bf": [
+      "gate_2"
+    ],
+    "f675ce88": [
+      "talents"
+    ],
+    "337519b0": [
+      "shield"
+    ],
+    "b7999803": [
+      "barrage"
+    ]
+  },
+  "abilities": {
+    "b7999803": "barrage",
+    "337519b0": "shield",
+    "af130df9": "surge",
+    "666cfa4d": "seize",
+    "b11f27f4": "sunder",
+    "e01d4da3": "needles",
+    "f9ac179f": "heat_aura",
+    "e2768927": "collapse_push",
+    "6b5aeff6": "ground_slam",
+    "fc65fefc": "flame_wave",
+    "d7cf47bb": "seekers",
+    "523470b3": "turret_summon",
+    "bc185afe": "astral_construct_summon"
+  }
+}

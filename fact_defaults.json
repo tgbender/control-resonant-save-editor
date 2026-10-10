@@ -1,0 +1,322 @@
+{
+  "44e0c3c127b705df": {
+    "fact_name": "ability_unlocks/dodge_unlocked",
+    "type": "boolean",
+    "default": false
+  },
+  "aae5e45e09a943b4": {
+    "fact_name": "ability_unlocks/air_dodge_unlocked",
+    "type": "boolean",
+    "default": false
+  },
+  "3d9fd10a035ead72": {
+    "fact_name": "ability_unlocks/dash_unlocked",
+    "type": "boolean",
+    "default": false
+  },
+  "0bbb6718553bf47b": {
+    "fact_name": "ability_unlocks/jump_ability_unlocked",
+    "type": "boolean",
+    "default": false
+  },
+  "76ddb539072ae8f4": {
+    "fact_name": "ability_unlocks/surge_unlocked",
+    "type": "boolean",
+    "default": false
+  },
+  "cc4738ae34430bb1": {
+    "fact_name": "ability_unlocks/gravity_anomaly_ability_unlocked",
+    "type": "boolean",
+    "default": false
+  },
+  "24050ce7dc5e7734": {
+    "fact_name": "ability_unlocks/reach_unlocked",
+    "type": "boolean",
+    "default": false
+  },
+  "548c5199d2d6bf9f": {
+    "fact_name": "ability_unlocks/astral_construct_summon_unlocked",
+    "type": "boolean",
+    "default": false
+  },
+  "3f335a8262d8fcc0": {
+    "fact_name": "ability_unlocks/flame_wave_unlocked",
+    "type": "boolean",
+    "default": false
+  },
+  "af803fd13c6b285a": {
+    "fact_name": "ability_unlocks/ground_slam_unlocked",
+    "type": "boolean",
+    "default": false
+  },
+  "bf347de9048c94d5": {
+    "fact_name": "ability_unlocks/shield_unlocked",
+    "type": "boolean",
+    "default": false
+  },
+  "c386cb9cd50ec1f1": {
+    "fact_name": "ability_unlocks/turret_summon_unlocked",
+    "type": "boolean",
+    "default": false
+  },
+  "55f052dc0f9ff225": {
+    "fact_name": "ability_unlocks/barrage_ability_unlocked",
+    "type": "boolean",
+    "default": false
+  },
+  "b2ac12c9c9d499c7": {
+    "fact_name": "ability_unlocks/needles_unlocked",
+    "type": "boolean",
+    "default": false
+  },
+  "1ce88c14776a5a63": {
+    "fact_name": "ability_unlocks/sunder_unlocked",
+    "type": "boolean",
+    "default": false
+  },
+  "221150659bf8ac02": {
+    "fact_name": "ability_select_unlocks/barrage_boss_ability_unlocked",
+    "type": "boolean",
+    "default": false
+  },
+  "f2c74fc7ab4625b6": {
+    "fact_name": "ability_select_unlocks/barrage_boss_ability_unlocked_count",
+    "type": "number",
+    "default": 0.0
+  },
+  "7ed46b989f506a5c": {
+    "fact_name": "ability_select_unlocks/barrage_boss_ability_selected",
+    "type": "boolean",
+    "default": false
+  },
+  "ad9b22b652492ba1": {
+    "fact_name": "ability_select_unlocks/barrage_boss_ability_selected_count",
+    "type": "number",
+    "default": 0.0
+  },
+  "43b16da265b5491a": {
+    "fact_name": "ability_select_unlocks/dancer_boss_ability_unlocked",
+    "type": "boolean",
+    "default": false
+  },
+  "a7e7c5828d423e6f": {
+    "fact_name": "ability_select_unlocks/dancer_boss_ability_unlocked_count",
+    "type": "number",
+    "default": 0.0
+  },
+  "864f038ca76ba129": {
+    "fact_name": "ability_select_unlocks/dancer_boss_ability_selected",
+    "type": "boolean",
+    "default": false
+  },
+  "57f2e12751e3e016": {
+    "fact_name": "ability_select_unlocks/dancer_boss_ability_selected_count",
+    "type": "number",
+    "default": 0.0
+  },
+  "fb4fffd9e5260a88": {
+    "fact_name": "ability_select_unlocks/mold_boss_ability_unlocked",
+    "type": "boolean",
+    "default": false
+  },
+  "dd93934fca6ffb95": {
+    "fact_name": "ability_select_unlocks/mold_boss_ability_unlocked_count",
+    "type": "number",
+    "default": 0.0
+  },
+  "71f9a7d694f7cebe": {
+    "fact_name": "ability_select_unlocks/mold_boss_ability_selected",
+    "type": "boolean",
+    "default": false
+  },
+  "6211835e0468731e": {
+    "fact_name": "ability_select_unlocks/mold_boss_ability_selected_count",
+    "type": "number",
+    "default": 0.0
+  },
+  "1c093aeb0c0658b5": {
+    "fact_name": "ability_select_unlocks/heat_boss_ability_unlocked",
+    "type": "boolean",
+    "default": false
+  },
+  "cd9f213365be9a3c": {
+    "fact_name": "ability_select_unlocks/heat_boss_ability_unlocked_count",
+    "type": "number",
+    "default": 0.0
+  },
+  "be169b4e18e56ddd": {
+    "fact_name": "ability_select_unlocks/heat_boss_ability_selected",
+    "type": "boolean",
+    "default": false
+  },
+  "dca0880b075ddad8": {
+    "fact_name": "ability_select_unlocks/heat_boss_ability_selected_count",
+    "type": "number",
+    "default": 0.0
+  },
+  "b6331bf77c178891": {
+    "fact_name": "ability_select_unlocks/astral_boss_ability_unlocked",
+    "type": "boolean",
+    "default": false
+  },
+  "4fee54fce71b3b7c": {
+    "fact_name": "ability_select_unlocks/astral_boss_ability_unlocked_count",
+    "type": "number",
+    "default": 0.0
+  },
+  "48614bebf1428b05": {
+    "fact_name": "ability_select_unlocks/astral_boss_ability_selected",
+    "type": "boolean",
+    "default": false
+  },
+  "eab9f6bd4e676df5": {
+    "fact_name": "ability_select_unlocks/astral_boss_ability_selected_count",
+    "type": "number",
+    "default": 0.0
+  },
+  "2039650c69056a70": {
+    "fact_name": "ability_select_unlocks/psychic_boss_ability_unlocked",
+    "type": "boolean",
+    "default": false
+  },
+  "4ae879410c90ad80": {
+    "fact_name": "ability_select_unlocks/psychic_boss_ability_unlocked_count",
+    "type": "number",
+    "default": 0.0
+  },
+  "1ed678860d2e85e3": {
+    "fact_name": "ability_select_unlocks/psychic_boss_ability_selected",
+    "type": "boolean",
+    "default": false
+  },
+  "a320f4f4e4d7aa92": {
+    "fact_name": "ability_select_unlocks/psychic_boss_ability_selected_count",
+    "type": "number",
+    "default": 0.0
+  },
+  "8d6f4bfeb0031d90": {
+    "fact_name": "ability_unlocks/heat_aura_unlocked",
+    "type": "boolean",
+    "default": false
+  },
+  "a65ae5579f4a09be": {
+    "fact_name": "ability_unlocks/collapse_push_unlocked",
+    "type": "boolean",
+    "default": false
+  },
+  "1167d3900fb6c359": {
+    "fact_name": "ability_unlocks/seekers_unlocked",
+    "type": "boolean",
+    "default": false
+  },
+  "cf694e4661ff0d91": {
+    "fact_name": "talents/shield_explosion",
+    "type": "boolean",
+    "default": false
+  },
+  "f0d538cbe424c5cd": {
+    "fact_name": "map_unlocks/map_unlocked_zone_frontline",
+    "type": "boolean",
+    "default": false
+  },
+  "83f3cb8a3667af88": {
+    "fact_name": "ability_unlocks/seize_unlocked",
+    "type": "boolean",
+    "default": false
+  },
+  "bef817c6c15561f8": {
+    "fact_name": "ability_select_unlocks/astral_boss_corpse_unlocked",
+    "type": "boolean",
+    "default": false
+  },
+  "dfa2374ac045afc3": {
+    "fact_name": "ability_select_unlocks/dancer_boss_corpse_unlocked",
+    "type": "boolean",
+    "default": false
+  },
+  "169429519ab333b5": {
+    "fact_name": "ability_select_unlocks/heat_boss_corpse_unlocked",
+    "type": "boolean",
+    "default": false
+  },
+  "e07c40e9a4381c94": {
+    "fact_name": "ability_select_unlocks/mold_boss_corpse_unlocked",
+    "type": "boolean",
+    "default": false
+  },
+  "fbd734531dc66022": {
+    "fact_name": "ability_select_unlocks/psychic_boss_corpse_unlocked",
+    "type": "boolean",
+    "default": false
+  },
+  "6d37aad9dc78d3aa": {
+    "fact_name": "ability_unlocks/perfect_dodge_unlocked",
+    "type": "boolean",
+    "default": false
+  },
+  "fa502e8d9d53e49c": {
+    "fact_name": "quests/resonants/defeated_astral_resonant",
+    "type": "boolean",
+    "default": false
+  },
+  "675aa21ee4583ac3": {
+    "fact_name": "quests/resonants/defeated_dancer_resonant",
+    "type": "boolean",
+    "default": false
+  },
+  "27401a8174aec358": {
+    "fact_name": "quests/resonants/defeated_heat_resonant",
+    "type": "boolean",
+    "default": false
+  },
+  "e60aa43bf31d17d3": {
+    "fact_name": "map_unlocks/map_unlocked_zone_downtown",
+    "type": "boolean",
+    "default": false
+  },
+  "616cb0ee4b177014": {
+    "fact_name": "quests/resonants/defeated_psychic_resonant",
+    "type": "boolean",
+    "default": false
+  },
+  "33f5147115774286": {
+    "fact_name": "map_unlocks/map_unlocked_zone_twisted",
+    "type": "boolean",
+    "default": false
+  },
+  "00d2578f453b9a18": {
+    "fact_name": "map_unlocks/map_unlocked_zone_undercity",
+    "type": "boolean",
+    "default": false
+  },
+  "03bffdb50f12fed8": {
+    "fact_name": "map_unlocks/map_unlocked_zone_pattern",
+    "type": "boolean",
+    "default": false
+  },
+  "7486ab7e954206b9": {
+    "fact_name": "map_unlocks/map_unlocked_zone_mold",
+    "type": "boolean",
+    "default": false
+  },
+  "c230e5966a029601": {
+    "fact_name": "map_unlocks/map_unlocked_zone_hiss",
+    "type": "boolean",
+    "default": false
+  },
+  "b18d6b4b9a913d7f": {
+    "fact_name": "quests/resonants/defeated_all_resonants",
+    "type": "boolean",
+    "default": false
+  },
+  "d9acb5501d73d9ce": {
+    "fact_name": "quests/resonants/defeated_mold_resonant",
+    "type": "boolean",
+    "default": false
+  },
+  "f03fd30ad3ef507a": {
+    "fact_name": "quests/resonants/defeated_debris_resonant",
+    "type": "boolean",
+    "default": false
+  }
+}

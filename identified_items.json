@@ -1,0 +1,198 @@
+{
+  "f3e708bd93906554": {
+    "name": "Living Shard",
+    "fact_name": "currency/special_material/aberrant_shards",
+    "record": "wf_b77387c5b1e3feaa",
+    "type": "number",
+    "default": 0.0
+  },
+  "e695b0be9fe3a3be": {
+    "name": "Power Upgrade Point",
+    "fact_name": "currency/special_material/combat_essence",
+    "record": "wf_05a5a4b8088bbebd",
+    "type": "number",
+    "default": 0.0
+  },
+  "69cb479da32f0045": {
+    "name": "Reset Item",
+    "fact_name": "currency/special_material/respec_items",
+    "record": "wf_7cb0e1e79a742b8e",
+    "type": "number",
+    "default": 0.0
+  },
+  "5c1a7e522995afa1": {
+    "name": "Health Upgrade Point",
+    "fact_name": "currency/special_material/life_essence",
+    "record": "wf_45608de79feb11b8",
+    "type": "number",
+    "default": 0.0
+  },
+  "c9870f3de2b20f9c": {
+    "name": "Resonant Token",
+    "fact_name": "currency/special_material/resonant_token",
+    "record": "wf_e1c69bf0f792f4bb",
+    "type": "number",
+    "default": 0.0
+  },
+  "a7c716a1653693e1": {
+    "name": "Corrupted Element",
+    "fact_name": "currency/common_material/common_material_a",
+    "record": "wf_38411351d70f13a4",
+    "type": "number",
+    "default": 0.0
+  },
+  "9f6e42f5cd97d449": {
+    "name": "Distorted Form",
+    "fact_name": "currency/common_material/common_material_b",
+    "record": "wf_0901f534545be5bd",
+    "type": "number",
+    "default": 0.0
+  },
+  "828c9cbd9a6e8d11": {
+    "name": "Warped Resonance",
+    "fact_name": "currency/common_material/common_material_c",
+    "record": "wf_ce9456ca936a698d",
+    "type": "number",
+    "default": 0.0
+  },
+  "2b54cf77bded2e8f": {
+    "name": "Edible Glob",
+    "fact_name": "currency/common_material/common_material_d",
+    "record": "wf_2251e31ad1a2c6a0",
+    "type": "number",
+    "default": 0.0
+  },
+  "673e857ab6385207": {
+    "name": "Fungal Growth",
+    "fact_name": "currency/common_material/common_material_e",
+    "record": "wf_75c42530947ea98a",
+    "type": "number",
+    "default": 0.0
+  },
+  "b0761420d9a30847": {
+    "name": "Thriving Spore",
+    "fact_name": "currency/common_material/common_material_f",
+    "record": "wf_ead9244368d691ab",
+    "type": "number",
+    "default": 0.0
+  },
+  "54789ff796e3d42f": {
+    "name": "Ordered Image",
+    "fact_name": "currency/common_material/common_material_g",
+    "record": "wf_e3d6699a9542029c",
+    "type": "number",
+    "default": 0.0
+  },
+  "05a3cb2a79908e9d": {
+    "name": "Patterned Thought",
+    "fact_name": "currency/common_material/common_material_h",
+    "record": "wf_2621ed72e37618b4",
+    "type": "number",
+    "default": 0.0
+  },
+  "9010de74f7494e28": {
+    "name": "Undefined Reading",
+    "fact_name": "currency/common_material/common_material_i",
+    "record": "wf_7119fdbd15fe08bc",
+    "type": "number",
+    "default": 0.0
+  },
+  "ff4a89661846975b": {
+    "name": "Aberrant Slivers",
+    "fact_name": "currency/rare_material/rare_material_a",
+    "record": "wf_a54e64b654f1dbb6",
+    "type": "number",
+    "default": 0.0
+  },
+  "509a35e40f88054b": {
+    "name": "Aberrant Splinter",
+    "fact_name": "currency/rare_material/rare_material_b",
+    "record": "wf_78c5878c3d672ba4",
+    "type": "number",
+    "default": 0.0
+  },
+  "a04608c25b3fdba7": {
+    "name": "Aberrant Fragment",
+    "fact_name": "currency/rare_material/rare_material_c",
+    "record": "wf_6ef596773126089b",
+    "type": "number",
+    "default": 0.0
+  },
+  "ffce72e1d6bf389e": {
+    "name": "Aberrant Shard",
+    "fact_name": "currency/rare_material/rare_material_d",
+    "record": "wf_b5ec30e76c97568e",
+    "type": "number",
+    "default": 0.0
+  },
+  "c4bd725f3f6278e5": {
+    "name": "Aberrant Cuts",
+    "fact_name": "currency/rare_material/rare_material_e",
+    "record": "wf_36cf839edafd9794",
+    "type": "number",
+    "default": 0.0
+  },
+  "b05da09e8543f38a": {
+    "name": "Aberrant Remnant",
+    "fact_name": "currency/rare_material/rare_material_f",
+    "record": "wf_eb805109787dc99b",
+    "type": "number",
+    "default": 0.0
+  },
+  "9fddcfa05d618794": {
+    "name": "Nostalgic Echo",
+    "fact_name": "currency/charm_component/charm_component_a",
+    "record": "wf_434ecdd2299ef2a0",
+    "type": "number",
+    "default": 0.0
+  },
+  "e35ce2c3b1063120": {
+    "name": "Quiet Echo",
+    "fact_name": "currency/charm_component/charm_component_b",
+    "record": "wf_f0fd6934c424b490",
+    "type": "number",
+    "default": 0.0
+  },
+  "5cb3f17953764f0e": {
+    "name": "Violent Echo",
+    "fact_name": "currency/charm_component/charm_component_c",
+    "record": "wf_cc77f3deff7c7e99",
+    "type": "number",
+    "default": 0.0
+  },
+  "70e4c94e44601b52": {
+    "name": "Mourning Echo",
+    "fact_name": "currency/charm_component/charm_component_d",
+    "record": "wf_d8f9455dea6f4c95",
+    "type": "number",
+    "default": 0.0
+  },
+  "3484aea8a081e812": {
+    "name": "Panicked Echo",
+    "fact_name": "currency/charm_component/charm_component_e",
+    "record": "wf_31129dce75f443a3",
+    "type": "number",
+    "default": 0.0
+  },
+  "120d84bfc0026e94": {
+    "name": "Odd Echo",
+    "fact_name": "currency/charm_component/charm_component_f",
+    "record": "wf_baef8648632f0caf",
+    "type": "number",
+    "default": 0.0
+  },
+  "1e32cdb1862aa913": {
+    "name": "Source",
+    "fact_name": "currency/general/cash",
+    "record": "wf_8c295bd55a687182",
+    "type": "number",
+    "default": 0.0
+  },
+  "4a29a12bb3ebc356": {
+    "name": "Talent Point",
+    "fact_name": "currency/general/talent_points",
+    "record": "wf_6a834bdeb89914bd",
+    "type": "number",
+    "default": 0.0
+  }
+}

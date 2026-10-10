@@ -1,0 +1,735 @@
+{
+  "fa3ac55920cc9852": {
+    "fact_name": "outfits/base/base_testsuit",
+    "record": "wf_8762a7d6113b60a7",
+    "default": true,
+    "category": "base",
+    "items": [
+      {
+        "item_id": "dylan_base_testsuit",
+        "name": "Surplus Sensor Platform Suit",
+        "localization_key": "OUTFIT_ITEM_DYLAN_BASE_TESTSUIT"
+      }
+    ],
+    "name": "Surplus Sensor Platform Suit"
+  },
+  "9dbce9c2a024bb8c": {
+    "fact_name": "outfits/base/base_p6_torn",
+    "record": "wf_437b338a8c65b7ad",
+    "default": true,
+    "category": "base",
+    "items": [
+      {
+        "item_id": "dylan_base_p6_torn",
+        "name": "P6 Uniform: Torn",
+        "localization_key": "OUTFIT_ITEM_DYLAN_BASE_P6_TORN"
+      }
+    ],
+    "name": "P6 Uniform: Torn"
+  },
+  "7ad58a6d0cbded8b": {
+    "fact_name": "outfits/hair/hair_manbun",
+    "record": "wf_c5864fa4e3b77788",
+    "default": true,
+    "category": "hair",
+    "items": [
+      {
+        "item_id": "dylan_hair_manbun",
+        "name": "Half Bun",
+        "localization_key": "OUTFIT_ITEM_DYLAN_HAIR_MANBUN"
+      }
+    ],
+    "name": "Half Bun"
+  },
+  "78c5e9af5a70be62": {
+    "fact_name": "outfits/body/body_full",
+    "record": "wf_56fe58c5d09197a2",
+    "default": true,
+    "category": "body",
+    "items": [
+      {
+        "item_id": "dylan_body_full",
+        "name": "Regular",
+        "localization_key": "OUTFIT_ITEM_DYLAN_BODY_FULL"
+      }
+    ],
+    "name": "Regular"
+  },
+  "4152ecbc6c701d82": {
+    "fact_name": "outfits/beard/beard_long",
+    "record": "wf_417784a927d41eb4",
+    "default": true,
+    "category": "beard",
+    "items": [
+      {
+        "item_id": "dylan_beard_long",
+        "name": "Full",
+        "localization_key": "OUTFIT_ITEM_DYLAN_BEARD_LONG"
+      }
+    ],
+    "name": "Full"
+  },
+  "4c1eb4dd63c0b84f": {
+    "fact_name": "outfits/beard/beard_medium",
+    "record": "wf_656005083187f9ad",
+    "default": true,
+    "category": "beard",
+    "items": [
+      {
+        "item_id": "dylan_beard_medium",
+        "name": "Medium",
+        "localization_key": "OUTFIT_ITEM_DYLAN_BEARD_MEDIUM"
+      }
+    ],
+    "name": "Medium"
+  },
+  "e33536b5d5fd840e": {
+    "fact_name": "outfits/top/top_poncho",
+    "record": "wf_fa045ab1aced55a0",
+    "default": true,
+    "category": "top",
+    "items": [
+      {
+        "item_id": "dylan_top_poncho",
+        "name": "Bureau Rain Gear",
+        "localization_key": "OUTFIT_ITEM_DYLAN_TOP_PONCHO"
+      }
+    ],
+    "name": "Bureau Rain Gear"
+  },
+  "93f52779d8bcd4b4": {
+    "fact_name": "outfits/hair/hair_mohawk",
+    "record": "wf_d71fe05009ebbe8a",
+    "default": false,
+    "category": "hair",
+    "items": [
+      {
+        "item_id": "dylan_hair_mohawk",
+        "name": "Skin Fade Mullet",
+        "localization_key": "OUTFIT_ITEM_DYLAN_HAIR_MOHAWK"
+      }
+    ],
+    "name": "Skin Fade Mullet"
+  },
+  "355d253ecd6162bc": {
+    "fact_name": "outfits/base/base_deluxe",
+    "record": "wf_974e4a943d4dfb8f",
+    "default": false,
+    "category": "base",
+    "items": [
+      {
+        "item_id": "dylan_base_deluxe",
+        "name": "Diagnostic Suit",
+        "localization_key": "OUTFIT_ITEM_DYLAN_BASE_DELUXE"
+      }
+    ],
+    "name": "Diagnostic Suit"
+  },
+  "d39195ae7275a989": {
+    "fact_name": "outfits/hair/hair_deluxe",
+    "record": "wf_5d6dbd6add97048d",
+    "default": false,
+    "category": "hair",
+    "items": [
+      {
+        "item_id": "dylan_hair_deluxe",
+        "name": "Crew Cut",
+        "localization_key": "OUTFIT_ITEM_DYLAN_HAIR_DELUXE"
+      }
+    ],
+    "name": "Crew Cut"
+  },
+  "6d07f50c5295f8b7": {
+    "fact_name": "outfits/top/top_deluxe",
+    "record": "wf_c9eb0854d5e9459f",
+    "default": false,
+    "category": "top",
+    "items": [
+      {
+        "item_id": "dylan_top_deluxe",
+        "name": "Circulation Vest",
+        "localization_key": "OUTFIT_ITEM_DYLAN_TOP_DELUXE"
+      }
+    ],
+    "name": "Circulation Vest"
+  },
+  "8f3741dbff2cb8eb": {
+    "fact_name": "outfits/body/body_scarred",
+    "record": "wf_3fd107fdbf49e7ba",
+    "default": false,
+    "category": "body",
+    "items": [
+      {
+        "item_id": "dylan_body_scarred",
+        "name": "Corrupted",
+        "localization_key": "OUTFIT_ITEM_DYLAN_BODY_SCARRED"
+      }
+    ],
+    "name": "Corrupted"
+  },
+  "b961238cce640f14": {
+    "fact_name": "outfits/accessories/accessories_testdummy",
+    "record": "wf_58c88473a81e119d",
+    "default": false,
+    "category": "accessories",
+    "items": [
+      {
+        "item_id": "dylan_accessories_testdummy",
+        "name": "Sierra Helmet",
+        "localization_key": "OUTFIT_ITEM_DYLAN_ACCESSORIES_TESTDUMMY"
+      }
+    ],
+    "name": "Sierra Helmet"
+  },
+  "2e27c13f1b8be2ad": {
+    "fact_name": "outfits/accessories/accessories_engineeringgoggles",
+    "record": "wf_e223061ae57a51b2",
+    "default": false,
+    "category": "accessories",
+    "items": [
+      {
+        "item_id": "dylan_accessories_engineergoggles",
+        "name": "Optical Filtering Goggles",
+        "localization_key": "OUTFIT_ITEM_DYLAN_ACCESSORIES_ENGINEERGOGGLES"
+      }
+    ],
+    "name": "Optical Filtering Goggles"
+  },
+  "5388457983503c2e": {
+    "fact_name": "outfits/accessories/accessories_vendorcap",
+    "record": "wf_86a0579866e1ce82",
+    "default": false,
+    "category": "accessories",
+    "items": [
+      {
+        "item_id": "dylan_accessories_vendorcap",
+        "name": "Third Ice Baseball Cap",
+        "localization_key": "OUTFIT_ITEM_DYLAN_ACCESSORIES_VENDORCAP"
+      }
+    ],
+    "name": "Third Ice Baseball Cap"
+  },
+  "747afdefdbabb85b": {
+    "fact_name": "outfits/accessories/accessories_brokensunglasses",
+    "record": "wf_3730e6cdd1166397",
+    "default": false,
+    "category": "accessories",
+    "items": [
+      {
+        "item_id": "dylan_accessories_brokensunglasses",
+        "name": "Cracked Standard Issue Sunglasses",
+        "localization_key": "OUTFIT_ITEM_DYLAN_ACCESSORIES_SUNGLASSES_BROKEN"
+      }
+    ],
+    "name": "Cracked Standard Issue Sunglasses"
+  },
+  "57c9ea469e42c97b": {
+    "fact_name": "outfits/accessories/accessories_ps",
+    "record": "wf_a9e8506f926909ad",
+    "default": false,
+    "category": "accessories",
+    "items": [
+      {
+        "item_id": "dylan_accessories_ps",
+        "name": "Threshold Bureau Gas Mask",
+        "localization_key": "OUTFIT_ITEM_DYLAN_ACCESSORIES_PS"
+      }
+    ],
+    "name": "Threshold Bureau Gas Mask"
+  },
+  "46780e853cf1a90b": {
+    "fact_name": "outfits/accessories/accessories_comms",
+    "record": "wf_14e81d8a9dcb7b9b",
+    "default": false,
+    "category": "accessories",
+    "items": [
+      {
+        "item_id": "dylan_accessories_comms",
+        "name": "Communications Department Headset",
+        "localization_key": "OUTFIT_ITEM_DYLAN_ACCESSORIES_COMMS"
+      }
+    ],
+    "name": "Communications Department Headset"
+  },
+  "f37dc383c5c5e132": {
+    "fact_name": "outfits/top/top_monk",
+    "record": "wf_d3be8bd00c42cb93",
+    "default": false,
+    "category": "top",
+    "items": [
+      {
+        "item_id": "dylan_top_monk",
+        "name": "MIO Specialist's Robe",
+        "localization_key": "OUTFIT_ITEM_DYLAN_TOP_MONK"
+      }
+    ],
+    "name": "MIO Specialist's Robe"
+  },
+  "bf6be35893f7d586": {
+    "fact_name": "outfits/top/top_testdummy",
+    "record": "wf_45f9e670e88ffe96",
+    "default": false,
+    "category": "top",
+    "items": [
+      {
+        "item_id": "dylan_top_testdummy",
+        "name": "Sierra Vest",
+        "localization_key": "OUTFIT_ITEM_DYLAN_TOP_VEST_TESTDUMMY"
+      }
+    ],
+    "name": "Sierra Vest"
+  },
+  "2859e4a7f3d0f7fb": {
+    "fact_name": "outfits/top/top_ps",
+    "record": "wf_b954adcbd024b5b6",
+    "default": false,
+    "category": "top",
+    "items": [
+      {
+        "item_id": "dylan_top_ps",
+        "name": "Threshold Bureau Coat",
+        "localization_key": "OUTFIT_ITEM_DYLAN_TOP_PS"
+      }
+    ],
+    "name": "Threshold Bureau Coat"
+  },
+  "ef6fbc7ba02ab697": {
+    "fact_name": "outfits/base/base_testdummy",
+    "record": "wf_907324bfd9a062a7",
+    "default": false,
+    "category": "base",
+    "items": [
+      {
+        "item_id": "dylan_base_testdummy",
+        "name": "Sierra Suit",
+        "localization_key": "OUTFIT_ITEM_DYLAN_BASE_TESTDUMMY"
+      }
+    ],
+    "name": "Sierra Suit"
+  },
+  "a70d57f494331711": {
+    "fact_name": "outfits/base/base_ps",
+    "record": "wf_84edd4c6f4882288",
+    "default": false,
+    "category": "base",
+    "items": [
+      {
+        "item_id": "dylan_base_ps",
+        "name": "Threshold Bureau Workwear",
+        "localization_key": "OUTFIT_ITEM_DYLAN_BASE_PS"
+      }
+    ],
+    "name": "Threshold Bureau Workwear"
+  },
+  "5f7c4166260f3cfd": {
+    "fact_name": "outfits/base/base_shirtless",
+    "record": "wf_bc75711894856888",
+    "default": false,
+    "category": "base",
+    "items": [
+      {
+        "item_id": "dylan_base_shirtless",
+        "name": "Exposed",
+        "localization_key": "OUTFIT_ITEM_DYLAN_BASE_SHIRTLESS"
+      }
+    ],
+    "name": "Exposed"
+  },
+  "4f1849b3d76dea22": {
+    "fact_name": "outfits/top/top_poncho_torn",
+    "record": "wf_259fc7d1b51e9dba",
+    "default": false,
+    "category": "top",
+    "items": [
+      {
+        "item_id": "dylan_top_poncho_torn",
+        "name": "Bureau Rain Gear: Torn",
+        "localization_key": "OUTFIT_ITEM_DYLAN_TOP_PONCHO_TORN"
+      }
+    ],
+    "name": "Bureau Rain Gear: Torn"
+  },
+  "e103e6d25f12755e": {
+    "fact_name": "outfits/top/top_raincoat_hooded",
+    "record": "wf_fee65d084c50d5aa",
+    "default": false,
+    "category": "top",
+    "items": [
+      {
+        "item_id": "dylan_top_raincoat_hooddown",
+        "name": "Hood Down Tactical Rain Jacket",
+        "localization_key": "OUTFIT_ITEM_DYLAN_TOP_RAINCOAT_HOODDOWN"
+      },
+      {
+        "item_id": "dylan_top_raincoat",
+        "name": "Bureau Tactical Rain Jacket",
+        "localization_key": "OUTFIT_ITEM_DYLAN_TOP_RAINCOAT"
+      }
+    ],
+    "name": "Hood Down Tactical Rain Jacket / Bureau Tactical Rain Jacket"
+  },
+  "b985af81376eb12e": {
+    "fact_name": "outfits/beard/beard_mustache",
+    "record": "wf_871dc4ca808c6cb0",
+    "default": false,
+    "category": "beard",
+    "items": [
+      {
+        "item_id": "dylan_beard_mustache",
+        "name": "Zappa",
+        "localization_key": "OUTFIT_ITEM_DYLAN_BEARD_MUSTACHE"
+      }
+    ],
+    "name": "Zappa"
+  },
+  "230300da89c07419": {
+    "fact_name": "outfits/beard/beard_short",
+    "record": "wf_36d7b90f5db88dad",
+    "default": false,
+    "category": "beard",
+    "items": [
+      {
+        "item_id": "dylan_beard_short",
+        "name": "Stubble",
+        "localization_key": "OUTFIT_ITEM_DYLAN_BEARD_SHORT"
+      }
+    ],
+    "name": "Stubble"
+  },
+  "060db50acc0cee62": {
+    "fact_name": "outfits/hair/hair_bowlcut",
+    "record": "wf_5b51d96b960781a8",
+    "default": false,
+    "category": "hair",
+    "items": [
+      {
+        "item_id": "dylan_hair_bowlcut",
+        "name": "Bowl Cut",
+        "localization_key": "OUTFIT_ITEM_DYLAN_HAIR_BOWLCUT"
+      }
+    ],
+    "name": "Bowl Cut"
+  },
+  "3db8170b560ca609": {
+    "fact_name": "outfits/hair/hair_boxerbraids",
+    "record": "wf_2d34767a5624dfa1",
+    "default": false,
+    "category": "hair",
+    "items": [
+      {
+        "item_id": "dylan_hair_boxerbraids",
+        "name": "Boxer Braids",
+        "localization_key": "OUTFIT_ITEM_DYLAN_HAIR_BOXERBRAIDS"
+      }
+    ],
+    "name": "Boxer Braids"
+  },
+  "9d7748a2f7a97764": {
+    "fact_name": "outfits/hair/hair_buzzcut",
+    "record": "wf_98e8e8c24d838d96",
+    "default": false,
+    "category": "hair",
+    "items": [
+      {
+        "item_id": "dylan_hair_buzzcut",
+        "name": "Buzzcut",
+        "localization_key": "OUTFIT_ITEM_DYLAN_HAIR_BUZZCUT"
+      }
+    ],
+    "name": "Buzzcut"
+  },
+  "b9aa4480dfe05124": {
+    "fact_name": "outfits/hair/hair_middlepart",
+    "record": "wf_232f9a31a357b39f",
+    "default": false,
+    "category": "hair",
+    "items": [
+      {
+        "item_id": "dylan_hair_middlepart",
+        "name": "Middle Part",
+        "localization_key": "OUTFIT_ITEM_DYLAN_HAIR_MIDDLEPART"
+      }
+    ],
+    "name": "Middle Part"
+  },
+  "bf70ed917323d75e": {
+    "fact_name": "outfits/accessories/accessories_armoredhelmet",
+    "record": "wf_3ce35019b5daca93",
+    "default": false,
+    "category": "accessories",
+    "items": [
+      {
+        "item_id": "dylan_accessories_armoredhelmet",
+        "name": "Armored Helmet M1",
+        "localization_key": "OUTFIT_ITEM_DYLAN_ACCESSORIES_ARMOREDHELMET"
+      }
+    ],
+    "name": "Armored Helmet M1"
+  },
+  "c418a6a89f2dc701": {
+    "fact_name": "outfits/accessories/accessories_cap",
+    "record": "wf_1ad265b4c0217abc",
+    "default": false,
+    "category": "accessories",
+    "items": [
+      {
+        "item_id": "dylan_accessories_cap",
+        "name": "Bureau Cap",
+        "localization_key": "OUTFIT_ITEM_DYLAN_ACCESSORIES_CAP"
+      }
+    ],
+    "name": "Bureau Cap"
+  },
+  "4f8659506c130215": {
+    "fact_name": "outfits/accessories/accessories_eyeglasses",
+    "record": "wf_49cc8093bc8f85ae",
+    "default": false,
+    "category": "accessories",
+    "items": [
+      {
+        "item_id": "dylan_accessories_eyeglasses",
+        "name": "Reading glasses",
+        "localization_key": "OUTFIT_ITEM_DYLAN_ACCESSORIES_EYEGLASSES"
+      }
+    ],
+    "name": "Reading glasses"
+  },
+  "529af7a2720818a6": {
+    "fact_name": "outfits/accessories/accessories_piercings",
+    "record": "wf_c21cf8da106a5392",
+    "default": false,
+    "category": "accessories",
+    "items": [
+      {
+        "item_id": "dylan_accessories_piercings",
+        "name": "Helix and Nostril Piercings",
+        "localization_key": "OUTFIT_ITEM_DYLAN_ACCESSORIES_PIERCINGS"
+      }
+    ],
+    "name": "Helix and Nostril Piercings"
+  },
+  "3ac4403e69a84b8a": {
+    "fact_name": "outfits/accessories/accessories_protectivebag",
+    "record": "wf_0a2c03a52824c7b1",
+    "default": false,
+    "category": "accessories",
+    "items": [
+      {
+        "item_id": "dylan_accessories_protectivebag",
+        "name": "Emergency Hood",
+        "localization_key": "OUTFIT_ITEM_DYLAN_ACCESSORIES_PROTECTIVEBAG"
+      }
+    ],
+    "name": "Emergency Hood"
+  },
+  "bbe273e9477071f1": {
+    "fact_name": "outfits/accessories/accessories_rangergoggles",
+    "record": "wf_6bcab40d3caa929a",
+    "default": false,
+    "category": "accessories",
+    "items": [
+      {
+        "item_id": "dylan_accessories_rangergoggles",
+        "name": "Standard Issue Goggles",
+        "localization_key": "OUTFIT_ITEM_DYLAN_ACCESSORIES_RANGERGOGGLES"
+      }
+    ],
+    "name": "Standard Issue Goggles"
+  },
+  "1ff1f660f65e4761": {
+    "fact_name": "outfits/accessories/accessories_sensoryhood",
+    "record": "wf_a39612c6092c65a5",
+    "default": false,
+    "category": "accessories",
+    "items": [
+      {
+        "item_id": "dylan_accessories_sensoryhood",
+        "name": "Sensory Restraint Hood",
+        "localization_key": "OUTFIT_ITEM_DYLAN_ACCESSORIES_SENSORYHOOD"
+      }
+    ],
+    "name": "Sensory Restraint Hood"
+  },
+  "18be1737e499b8a3": {
+    "fact_name": "outfits/accessories/accessories_sunglasses",
+    "record": "wf_e2b75271e9b45f94",
+    "default": false,
+    "category": "accessories",
+    "items": [
+      {
+        "item_id": "dylan_accessories_sunglasses",
+        "name": "Standard Issue Sunglasses",
+        "localization_key": "OUTFIT_ITEM_DYLAN_ACCESSORIES_SUNGLASSES"
+      }
+    ],
+    "name": "Standard Issue Sunglasses"
+  },
+  "99f72659a91a4b8c": {
+    "fact_name": "outfits/accessories/accessories_firebreak_goggles",
+    "record": "wf_1a9bb2123771dc8d",
+    "default": false,
+    "category": "accessories",
+    "items": [
+      {
+        "item_id": "dylan_accessories_firebreakgoggles",
+        "name": "Firebreaker Goggles",
+        "localization_key": "OUTFIT_ITEM_DYLAN_ACCESSORIES_FIREBREAKGOGGLES"
+      }
+    ],
+    "name": "Firebreaker Goggles"
+  },
+  "729a59722a16fb38": {
+    "fact_name": "outfits/base/base_civilian",
+    "record": "wf_d6b85d0165c59f96",
+    "default": false,
+    "category": "base",
+    "items": [
+      {
+        "item_id": "dylan_base_civilian",
+        "name": "Casual Outfit",
+        "localization_key": "OUTFIT_ITEM_DYLAN_BASE_CIVILIAN"
+      }
+    ],
+    "name": "Casual Outfit"
+  },
+  "7016a0b2003e2b45": {
+    "fact_name": "outfits/base/base_consultant",
+    "record": "wf_364e29e55de50b87",
+    "default": false,
+    "category": "base",
+    "items": [
+      {
+        "item_id": "dylan_base_consultant",
+        "name": "Agent Uniform",
+        "localization_key": "OUTFIT_ITEM_DYLAN_BASE_CONSULTANT"
+      }
+    ],
+    "name": "Agent Uniform"
+  },
+  "0b9822d1bb1b7557": {
+    "fact_name": "outfits/base/base_coveralls",
+    "record": "wf_1ccec3ac476b5a83",
+    "default": false,
+    "category": "base",
+    "items": [
+      {
+        "item_id": "dylan_base_coveralls",
+        "name": "Standard Issue Coverall",
+        "localization_key": "OUTFIT_ITEM_DYLAN_BASE_COVERALLS"
+      }
+    ],
+    "name": "Standard Issue Coverall"
+  },
+  "cb399c793d3502a5": {
+    "fact_name": "outfits/base/base_straitsuit",
+    "record": "wf_c9c52df37e21ffa7",
+    "default": false,
+    "category": "base",
+    "items": [
+      {
+        "item_id": "dylan_base_straitsuit",
+        "name": "Prime Candidate Restraint Suit",
+        "localization_key": "OUTFIT_ITEM_DYLAN_BASE_STRAITSUIT"
+      }
+    ],
+    "name": "Prime Candidate Restraint Suit"
+  },
+  "88b1a26832cd25de": {
+    "fact_name": "outfits/base/base_tanktop",
+    "record": "wf_c9834ec74eb9c897",
+    "default": false,
+    "category": "base",
+    "items": [
+      {
+        "item_id": "dylan_base_tanktop",
+        "name": "Stripped Down Work Uniform",
+        "localization_key": "OUTFIT_ITEM_DYLAN_BASE_TANKTOP"
+      }
+    ],
+    "name": "Stripped Down Work Uniform"
+  },
+  "2e817ca7f245ef6b": {
+    "fact_name": "outfits/body/body_muscular",
+    "record": "wf_5b8d7273ca30efbd",
+    "default": false,
+    "category": "body",
+    "items": [
+      {
+        "item_id": "dylan_body_muscular",
+        "name": "Fit",
+        "localization_key": "OUTFIT_ITEM_DYLAN_BODY_MUSCULAR"
+      }
+    ],
+    "name": "Fit"
+  },
+  "a7deab19eece4afc": {
+    "fact_name": "outfits/top/top_armor",
+    "record": "wf_bb33fbf15900f492",
+    "default": false,
+    "category": "top",
+    "items": [
+      {
+        "item_id": "dylan_top_armor",
+        "name": "Plate Carrier M1",
+        "localization_key": "OUTFIT_ITEM_DYLAN_TOP_ARMOR"
+      }
+    ],
+    "name": "Plate Carrier M1"
+  },
+  "3ab6df076607dc5e": {
+    "fact_name": "outfits/top/top_samurai",
+    "record": "wf_f4c79e7f4715359f",
+    "default": false,
+    "category": "top",
+    "items": [
+      {
+        "item_id": "dylan_top_samurai",
+        "name": "Aramid Work Clothes",
+        "localization_key": "OUTFIT_ITEM_DYLAN_TOP_SAMURAI"
+      }
+    ],
+    "name": "Aramid Work Clothes"
+  },
+  "89f8c87dd843e841": {
+    "fact_name": "outfits/top/top_urbanjacket",
+    "record": "wf_9da3a678e6decabf",
+    "default": false,
+    "category": "top",
+    "items": [
+      {
+        "item_id": "dylan_top_urbanjacket",
+        "name": "Varsity Jacket",
+        "localization_key": "OUTFIT_ITEM_DYLAN_TOP_URBANJACKET"
+      }
+    ],
+    "name": "Varsity Jacket"
+  },
+  "51dd662424ed8cb4": {
+    "fact_name": "outfits/top/top_vest",
+    "record": "wf_5999242ee465c396",
+    "default": false,
+    "category": "top",
+    "items": [
+      {
+        "item_id": "dylan_top_vest",
+        "name": "Compression Vest",
+        "localization_key": "OUTFIT_ITEM_DYLAN_TOP_VEST"
+      }
+    ],
+    "name": "Compression Vest"
+  },
+  "afc50a68ed9f1242": {
+    "fact_name": "outfits/base/base_resonants",
+    "record": "wf_7e2e83fc14b13dbc",
+    "default": false,
+    "category": "base",
+    "items": [
+      {
+        "item_id": "dylan_base_resonants",
+        "name": "Casual Outfit: Resonants",
+        "localization_key": "OUTFIT_ITEM_DYLAN_BASE_CIVILIAN_RESONANTS"
+      }
+    ],
+    "name": "Casual Outfit: Resonants"
+  }
+}
