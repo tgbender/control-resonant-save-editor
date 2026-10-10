@@ -1,4 +1,5 @@
 @echo off
 cd /d "%~dp0"
-uv run --offline --no-project python editor_gui.py
+set "PYTHONPATH=%~dp0src"
+uv run --offline --no-project python -m control_resonant_save_editor
 if errorlevel 1 pause

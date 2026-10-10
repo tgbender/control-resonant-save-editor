@@ -5,8 +5,8 @@ Does not install saves or change equipped slots. In-game acceptance is unverifie
 import struct
 from pathlib import Path
 
-from resonant_save import ROOT, Save, checksum, read_slot, write_export
-from progression import DEFAULTS
+from .resonant_save import Save, checksum, read_slot, write_export
+from .progression import DEFAULTS
 
 BARRAGE = 0x55F052DC0F9FF225
 SHIELD = 0xBF347DE9048C94D5
@@ -62,15 +62,19 @@ def export(source):
                                     for k in (UNLOCKED_COUNT, SELECTED_COUNT) if save.facts[k][0] != 3],
                 'validation': 'CRC and structure verified; unknown tail and loadout unchanged; in-game acceptance unverified',
                 'counter_model': 'Inferred: three owned Artist abilities correspond to three unlocked and selected choices.'}
-    return write_export(ROOT / 'exports', '-artist-abilities', source.name, files, edited, manifest)
+    return write_export('-artist-abilities', source.name, files, edited, manifest)
 
 
-if __name__ == '__main__':
+def main():
     import argparse
-    parser = argparse.ArgumentParser(description=__doc__)
+    parser = argparse.ArgumentParser(prog='control-resonant-artist', description=__doc__)
     parser.add_argument('save', type=Path)
     args = parser.parse_args()
     try:
         print(export(args.save))
     except (OSError, ValueError) as exc:
         parser.exit(1, f'Error: {exc}\n')
+
+
+if __name__ == '__main__':
+    main()

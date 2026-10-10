@@ -3,7 +3,7 @@ import hashlib
 from pathlib import Path
 import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
-from resonant_save import ROOT, Save, export_slot, export_slot_changes, material_changes, IDENTIFIED_ITEMS
+from .resonant_save import WORKSPACE, Save, export_slot, export_slot_changes, material_changes, IDENTIFIED_ITEMS
 
 SOURCE_CANDIDATE = 0x1E32CDB1862AA913
 
@@ -20,6 +20,7 @@ class Editor:
         ttk.Label(frame, text='CONTROL Resonant', font=('Segoe UI', 22, 'bold')).pack(anchor='w')
         ttk.Label(frame, text='Save inspector & experimental editor', font=('Segoe UI', 12)).pack(anchor='w', pady=(0, 14))
         ttk.Label(frame, text='Exports a new slot copy. Never installs edits or overwrites existing saves.').pack(anchor='w')
+        ttk.Label(frame, text=f'Exports folder: {WORKSPACE / "exports"}', wraplength=820).pack(anchor='w')
         ttk.Label(frame, text='Named currencies, cosmetic unlock exports, and ability / progression inspection.').pack(anchor='w', pady=(0, 12))
         buttons = ttk.Frame(frame); buttons.pack(fill='x')
         ttk.Button(buttons, text='Open persistent save…', command=self.choose).pack(side='left')
@@ -53,7 +54,10 @@ class Editor:
         ttk.Label(frame, text='A checksum-valid export is not yet proven to load correctly in the game.', foreground='#9a5200').pack(anchor='w', pady=(12, 0))
 
     def choose(self):
-        path = filedialog.askopenfilename(title='Choose a *-persi-global save', initialdir=str(ROOT / 'backups'))
+        backups = WORKSPACE / 'backups'
+        try: backups.mkdir(parents=True, exist_ok=True)
+        except OSError: pass
+        path = filedialog.askopenfilename(title='Choose a *-persi-global save', initialdir=str(backups))
         if path: self.load(Path(path))
 
     def load(self, path):
@@ -128,7 +132,7 @@ class Editor:
 
     def progression(self):
         if not self.save: return
-        from progression import inspect_progression, markdown_report
+        from .progression import inspect_progression, markdown_report
         try: report=markdown_report(inspect_progression(self.save),self.path)
         except ValueError as exc:
             messagebox.showerror('Unsupported progression data',str(exc));return
@@ -138,7 +142,7 @@ class Editor:
 
     def cosmetics(self):
         if not self.save: return
-        from cosmetics import inspect_cosmetics, export_cosmetics
+        from .cosmetics import inspect_cosmetics, export_cosmetics
         source, snapshot = self.path, self.save
         digest = hashlib.sha256(snapshot.data).hexdigest()
         rows = inspect_cosmetics(snapshot)
@@ -173,7 +177,11 @@ class Editor:
         ttk.Button(buttons, text='Export selected unlocks', command=export).pack(side='left')
         ttk.Button(buttons, text='Export all mapped unlocks', command=lambda: export(True)).pack(side='left', padx=10)
 
-if __name__ == '__main__':
+def main():
     app = tk.Tk()
     Editor(app)
     app.mainloop()
+
+
+if __name__ == '__main__':
+    main()

@@ -7,12 +7,12 @@ import tempfile
 import unittest
 from unittest.mock import patch
 
-import resonant_save as rs
-import cosmetics
-import artist_abilities as artist
-import alternate_abilities as alternate
-from cityhash64 import cityhash64
-from progression import DEFAULTS, inspect_progression
+from control_resonant_save_editor import resonant_save as rs
+from control_resonant_save_editor import cosmetics
+from control_resonant_save_editor import artist_abilities as artist
+from control_resonant_save_editor import alternate_abilities as alternate
+from control_resonant_save_editor.cityhash64 import cityhash64
+from control_resonant_save_editor.progression import DEFAULTS, inspect_progression
 
 SOURCE = 0x1E32CDB1862AA913
 SENTINEL = 0x0102030405060708
@@ -183,7 +183,7 @@ class ExportTests(unittest.TestCase):
                 root = Path(directory)
                 source = write_slot(root, fixture(*alternate_inputs()[:2]) if module is alternate else None)
                 original = {p.name: p.read_bytes() for p in root.iterdir()}
-                with patch.object(module, 'ROOT', root):
+                with patch.object(rs, 'WORKSPACE', root):
                     if module is rs: out = rs.export_slot(source, SOURCE, 5, 42)
                     elif module is cosmetics: out = cosmetics.export_cosmetics(source, [int(k, 16) for k in cosmetics.DEFINITIONS])
                     else: out = module.export(source)
@@ -198,7 +198,7 @@ class ExportTests(unittest.TestCase):
     def test_cosmetic_stale_guard_and_missing_companion(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory); source = write_slot(root); keys = [int(k, 16) for k in cosmetics.DEFINITIONS]
-            with patch.object(cosmetics, 'ROOT', root):
+            with patch.object(rs, 'WORKSPACE', root):
                 with self.assertRaises(ValueError): cosmetics.export_cosmetics(source, keys, 'stale')
                 source.with_name('slot-0_auto-0-player').unlink()
                 with self.assertRaises(OSError): cosmetics.export_cosmetics(source, keys)
@@ -208,7 +208,7 @@ class ExportTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory); source = write_slot(root)
             digest = hashlib.sha256(source.read_bytes()).hexdigest()
-            with patch.object(rs, 'ROOT', root):
+            with patch.object(rs, 'WORKSPACE', root):
                 with self.assertRaises(ValueError): rs.export_slot(source, SOURCE, 5, 42, 'stale')
                 with self.assertRaises(ValueError): rs.export_slot_changes(source, {SOURCE: (5, 99)}, 'stale')
                 for value in (-1, 2.5, rs.MAX_ITEM_AMOUNT + 1, float('nan')):
@@ -224,7 +224,7 @@ class ExportTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory, patch.object(rs, 'datetime') as clock:
             clock.now.return_value = fixed
             root = Path(directory); source = write_slot(root)
-            with patch.object(rs, 'ROOT', root):
+            with patch.object(rs, 'WORKSPACE', root):
                 first = rs.export_slot(source, SOURCE, 5, 42)
                 second = rs.export_slot(source, SOURCE, 5, 43)
             self.assertEqual(second.name, first.name + '-2')
@@ -234,7 +234,7 @@ class ExportTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory); source = write_slot(root)
             other = next(k for k in rs.IDENTIFIED_ITEMS if k != SOURCE)
-            with patch.object(rs, 'ROOT', root):
+            with patch.object(rs, 'WORKSPACE', root):
                 out = rs.export_slot_changes(source, {SOURCE: (5, 42), other: (5, 5)})
             changes = json.loads((out/'edit-manifest.json').read_text())['changes']
             self.assertEqual([c['fact_id'] for c in changes], [f'{SOURCE:016x}'])
@@ -246,7 +246,7 @@ class ExportTests(unittest.TestCase):
             numbers = {key: 5.0 for key in rs.IDENTIFIED_ITEMS}
             numbers.update({artist.UNLOCKED_COUNT: 3, artist.SELECTED_COUNT: 3})
             source = write_slot(root, fixture(numbers, {artist.BARRAGE: True, artist.SHIELD: True}))
-            with patch.object(artist, 'ROOT', root):
+            with patch.object(rs, 'WORKSPACE', root):
                 out = artist.export(source)
                 manifest = json.loads((out/'edit-manifest.json').read_text())
                 self.assertEqual([c['ability'] for c in manifest['boolean_changes']], ['Volatile Anomaly'])

@@ -6,8 +6,8 @@ Does not install saves or change equipped abilities or upgrade graphs.
 import struct
 from pathlib import Path
 
-from resonant_save import ROOT, Save, checksum, read_slot, write_export
-from progression import DEFAULTS, inspect_progression
+from .resonant_save import Save, checksum, read_slot, write_export
+from .progression import DEFAULTS, inspect_progression
 
 REWARDS = (
     ('heat', 'Ignite', 'heat_aura_unlocked', 'flame_wave_unlocked'),
@@ -94,14 +94,18 @@ def export(source):
         'validation': 'CRC, exact edit scope, tail/graphs/loadout preservation and idempotence verified; game loading unverified',
         'counter_model': 'Inferred: two owned abilities correspond to two unlocked and selected choices.',
     }
-    return write_export(ROOT / 'exports', '-alternate-abilities', source.name, files, edited, manifest)
+    return write_export('-alternate-abilities', source.name, files, edited, manifest)
 
 
-if __name__ == '__main__':
+def main():
     import argparse
-    parser = argparse.ArgumentParser(description=__doc__)
+    parser = argparse.ArgumentParser(prog='control-resonant-alternates', description=__doc__)
     parser.add_argument('save', type=Path)
     try:
         print(export(parser.parse_args().save))
     except (OSError, ValueError) as exc:
         parser.exit(1, f'Error: {exc}\n')
+
+
+if __name__ == '__main__':
+    main()

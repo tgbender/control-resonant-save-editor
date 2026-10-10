@@ -2,7 +2,7 @@
 import json
 import struct
 from pathlib import Path
-from resonant_save import ROOT, Save
+from .resonant_save import ROOT, Save
 
 DEFINITIONS = json.loads((ROOT / 'progression_definitions.json').read_text(encoding='utf8'))
 DEFAULTS = json.loads((ROOT / 'fact_defaults.json').read_text(encoding='utf8'))
@@ -86,9 +86,16 @@ def markdown_report(report, source):
     lines+=['','## Limits','']+['- '+note for note in report['notes']]
     return '\n'.join(lines)+'\n'
 
-if __name__=='__main__':
+def main():
     import argparse
-    parser=argparse.ArgumentParser(description=__doc__)
+    parser=argparse.ArgumentParser(prog='control-resonant-progression',description=__doc__)
     parser.add_argument('save',type=Path)
     args=parser.parse_args()
-    print(json.dumps(inspect_progression(Save.read(args.save)),indent=2))
+    try:
+        print(json.dumps(inspect_progression(Save.read(args.save)),indent=2))
+    except (OSError, ValueError) as exc:
+        parser.exit(1, f'Error: {exc}\n')
+
+
+if __name__ == '__main__':
+    main()

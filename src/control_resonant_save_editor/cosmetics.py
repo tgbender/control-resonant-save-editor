@@ -2,7 +2,7 @@
 import json
 import struct
 from pathlib import Path
-from resonant_save import ROOT, Save, checksum, read_slot, require_snapshot, write_export
+from .resonant_save import ROOT, Save, checksum, read_slot, require_snapshot, write_export
 
 DEFINITIONS = json.loads((ROOT / 'cosmetic_definitions.json').read_text(encoding='utf8'))
 CATEGORIES = {'base': 'Outfits', 'top': 'Outerwear', 'hair': 'Hair', 'beard': 'Facial hair',
@@ -52,12 +52,12 @@ def export_cosmetics(source, keys, expected_sha256=None):
     manifest = {'cosmetic_changes': changes,
                 'validation': 'CRC and save structure validated. Cosmetic unlocks have not been verified in-game.',
                 'scope': 'Mapped wardrobe ownership flags only. Equipped appearance and all other save data preserved.'}
-    return write_export(ROOT / 'exports', '-cosmetics', source.name, files, edited, manifest)
+    return write_export('-cosmetics', source.name, files, edited, manifest)
 
 
-if __name__ == '__main__':
+def main():
     import argparse
-    parser = argparse.ArgumentParser(description=__doc__)
+    parser = argparse.ArgumentParser(prog='control-resonant-cosmetics', description=__doc__)
     parser.add_argument('save', type=Path)
     group = parser.add_mutually_exclusive_group()
     group.add_argument('--unlock-all', action='store_true')
@@ -71,3 +71,7 @@ if __name__ == '__main__':
             print(json.dumps(inspect_cosmetics(Save.read(args.save)), indent=2))
     except (OSError, ValueError) as exc:
         parser.exit(1, f'Error: {exc}\n')
+
+
+if __name__ == '__main__':
+    main()

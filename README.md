@@ -14,37 +14,53 @@ An unofficial, experimental local save editor for CONTROL Resonant, with readabl
 - Export complete four-file slot copies with checksums and a change manifest. Source files are never overwritten.
 - Experimental command-line ability unlocks (see [Ability scripts](#ability-scripts)).
 
-## Requirements
+## Run it
 
-- Python 3.10 or newer with Tkinter. The standard library is sufficient. Some Linux distributions package Tkinter separately (for example `python3-tk`).
-- Optional: [uv](https://docs.astral.sh/uv/) to run the editor with a uv-managed Python.
+You need [uv](https://docs.astral.sh/uv/), or Python 3.10 or newer with Tkinter. uv-managed Pythons include Tkinter; some Linux distributions package it separately (for example `python3-tk`).
 
-## Launch
-
-With uv:
+### No install
 
 ```bash
-uv run --offline --no-project python editor_gui.py
+uvx --from git+https://github.com/tgbender/control-resonant-save-editor control-resonant-editor
 ```
 
-`--offline` stops uv from downloading anything, so it needs a Python that uv already manages. If you don't have one yet, run this once first (this step does download Python):
+uv downloads the editor (and a Python, if needed) into its cache and starts it. Nothing is installed permanently. Add `--refresh` after `uvx` to pick up a newer version.
+
+### Install
 
 ```bash
-uv python install 3.12
+uv tool install git+https://github.com/tgbender/control-resonant-save-editor
+control-resonant-editor
 ```
 
-On Windows, double-click `Launch Editor.cmd`, which runs the same uv command and does not install or download anything. With any other Python installation, run `python editor_gui.py`.
+This also installs the [command-line tools](#command-line). Update with `uv tool upgrade control-resonant-save-editor` and remove with `uv tool uninstall control-resonant-save-editor`. If the commands aren't found, run `uv tool update-shell` and open a new terminal.
+
+### From a downloaded copy
+
+Download the source (**Code → Download ZIP** on GitHub) or clone the repository.
+
+- **Windows:** double-click `Launch Editor.cmd`. It runs offline and never downloads anything, so uv needs a Python already; if you don't have one, run `uv python install 3.12` once.
+- **Anywhere:** run `uv run control-resonant-editor` in the folder.
+
+## Where files go
+
+The editor keeps its working files in `Documents/CONTROL Resonant save editor/`:
+
+- `backups/` is where the **Open** dialog starts, a convenient place to keep save backups.
+- `exports/` receives every export, each in its own timestamped folder.
+
+Both contain player data. Don't share them.
 
 ## Edit a save
 
 1. Close the game.
-2. Back up the save folder. Copying it into this project's `backups/` folder works well: the editor's **Open** dialog starts there, and Git ignores it. On Steam, saves are in `<Steam>/userdata/<account-id>/3669870/remote/`.
+2. Back up the save folder, for example by copying it into `Documents/CONTROL Resonant save editor/backups/`. On Steam, saves are in `<Steam>/userdata/<account-id>/3669870/remote/`.
 3. Click **Open persistent save…** and choose a `*-persi-global` file from your backup. Its matching `-header`, `-player`, and `-bundle-container` files must be in the same folder.
 4. Make an edit:
    - select a value, enter a new one, and click **Export edited slot copy**;
    - click **Export 99 crafting items**; or
    - click **Cosmetics…** and export selected or all unlocks.
-5. Each export creates a new folder under `exports/` containing all four slot files and an `edit-manifest.json` listing every change.
+5. Each export creates a new folder under `exports/` containing all four slot files and an `edit-manifest.json` listing every change. The editor shows the folder's location.
 6. To combine edits, open the exported `*-persi-global` file and export again.
 7. To install, close the game and copy the four slot files from the export folder into the save folder, replacing the files with the same names. Don't copy `edit-manifest.json`.
 8. Start the game, load the slot, save, and reload. Keep your backup until the changes survive that round trip.
@@ -55,26 +71,28 @@ The editor does not locate accounts, choose the newest checkpoint, make backups,
 
 ## Command line
 
+These commands are available after `uv tool install`. To use one without installing, put `uvx --from git+https://github.com/tgbender/control-resonant-save-editor` in front of it.
+
 Every tool validates the save's checksum and version and refuses anything unsupported. Exports go to a new folder under `exports/`; nothing is written back to the source.
 
 ```bash
 # Validate a save and list its numeric facts as JSON
-uv run --offline --no-project python resonant_save.py inspect "path/to/slot-0_auto-0-persi-global"
+control-resonant-save inspect "path/to/slot-0_auto-0-persi-global"
 
 # Compare numeric facts between two saves
-uv run --offline --no-project python resonant_save.py diff "path/to/before-persi-global" "path/to/after-persi-global"
+control-resonant-save diff "path/to/before-persi-global" "path/to/after-persi-global"
 
 # Export one numeric edit: fact ID in hex, --expect must match the current value
 # (1e32cdb1862aa913 is Source)
-uv run --offline --no-project python resonant_save.py export "path/to/slot-0_auto-0-persi-global" --fact 1e32cdb1862aa913 --expect 120 --value 500
+control-resonant-save export "path/to/slot-0_auto-0-persi-global" --fact 1e32cdb1862aa913 --expect 120 --value 500
 
 # Read-only ability and progression report as JSON
-uv run --offline --no-project python progression.py "path/to/slot-0_auto-0-persi-global"
+control-resonant-progression "path/to/slot-0_auto-0-persi-global"
 
 # List cosmetics with their IDs, then export some or all unlocks
-uv run --offline --no-project python cosmetics.py "path/to/slot-0_auto-0-persi-global"
-uv run --offline --no-project python cosmetics.py "path/to/slot-0_auto-0-persi-global" --unlock <id> [<id> ...]
-uv run --offline --no-project python cosmetics.py "path/to/slot-0_auto-0-persi-global" --unlock-all
+control-resonant-cosmetics "path/to/slot-0_auto-0-persi-global"
+control-resonant-cosmetics "path/to/slot-0_auto-0-persi-global" --unlock <id> [<id> ...]
+control-resonant-cosmetics "path/to/slot-0_auto-0-persi-global" --unlock-all
 ```
 
 ### Ability scripts
@@ -83,11 +101,11 @@ These scripts are experimental. Both use an inferred choice-counter model, and n
 
 ```bash
 # Add Shield and Volatile Anomaly; requires Barrage to be owned already
-uv run --offline --no-project python artist_abilities.py "path/to/slot-0_auto-0-persi-global"
+control-resonant-artist "path/to/slot-0_auto-0-persi-global"
 
 # Add the alternate ability for each of the four regional bosses; requires
 # existing completion and ownership evidence for all four
-uv run --offline --no-project python alternate_abilities.py "path/to/slot-0_auto-0-persi-global"
+control-resonant-alternates "path/to/slot-0_auto-0-persi-global"
 ```
 
 ## Validation and limitations
@@ -100,14 +118,13 @@ uv run --offline --no-project python alternate_abilities.py "path/to/slot-0_auto
 - **Abilities and cosmetics:** Ability unlock scripts and cosmetic unlocks remain experimental pending reproducible game-loading and save/reload validation.
 - **Metadata:** The bundled metadata contains internal identifiers and short display names needed by the editor. It contains no full localization tables, game archives, player progression snapshots, account IDs, or saved games.
 
-## Tests and packaging
+## Development
 
 ```bash
-uv run --offline --no-project python -m unittest -v
-uv run --offline --no-project python package_release.py
+uv run python -m unittest discover -s tests
 ```
 
-Packaging uses an exact allowlist, rejects unexpected files, and scans text for private-path and credential patterns. Don't share a used working folder by copying or zipping it yourself: `backups/` and `exports/` contain player data. Git ignores both, and `package_release.py` never includes them.
+A privacy test scans every file in the repository for personal paths, account identifiers, email addresses, credentials, and save files.
 
 ## Provenance
 

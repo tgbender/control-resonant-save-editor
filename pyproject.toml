@@ -1,0 +1,34 @@
+[project]
+name = "control-resonant-save-editor"
+version = "0.1.0"
+description = "Unofficial, experimental, dependency-free save inspector and editor for CONTROL Resonant"
+readme = "README.md"
+authors = [{ name = "Travis Bender" }]
+license = "MIT"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md"]
+requires-python = ">=3.10"
+dependencies = []
+keywords = ["control-resonant", "save-editor", "cityhash", "remedy", "northlight"]
+classifiers = [
+  "Environment :: Win32 (MS Windows)",
+  "Environment :: X11 Applications",
+  "Programming Language :: Python :: 3",
+  "Topic :: Games/Entertainment",
+]
+
+[project.urls]
+Repository = "https://github.com/tgbender/control-resonant-save-editor"
+
+[project.gui-scripts]
+control-resonant-editor = "control_resonant_save_editor.editor_gui:main"
+
+[project.scripts]
+control-resonant-save = "control_resonant_save_editor.resonant_save:main"
+control-resonant-progression = "control_resonant_save_editor.progression:main"
+control-resonant-cosmetics = "control_resonant_save_editor.cosmetics:main"
+control-resonant-artist = "control_resonant_save_editor.artist_abilities:main"
+control-resonant-alternates = "control_resonant_save_editor.alternate_abilities:main"
+
+[build-system]
+requires = ["uv_build>=0.11.3,<0.14.0"]
+build-backend = "uv_build"

@@ -14,7 +14,24 @@ import sys
 from datetime import datetime, timezone
 import zlib
 
+def documents_dir() -> Path:
+    """The user's Documents folder, following Windows folder redirection (e.g. OneDrive)."""
+    if sys.platform == 'win32':
+        import ctypes
+        import uuid
+        folder_id = (ctypes.c_byte * 16).from_buffer_copy(uuid.UUID('FDD39AD0-238F-46AF-ADB4-6C85480369C7').bytes_le)
+        path = ctypes.c_wchar_p()
+        if ctypes.windll.shell32.SHGetKnownFolderPath(ctypes.byref(folder_id), 0, None, ctypes.byref(path)) == 0:
+            try:
+                return Path(path.value)
+            finally:
+                ctypes.windll.ole32.CoTaskMemFree(path)
+    documents = Path.home() / 'Documents'
+    return documents if documents.is_dir() else Path.home()
+
 ROOT = Path(__file__).resolve().parent
+# Exports and suggested backups live outside the code, which may be an installed package.
+WORKSPACE = documents_dir() / 'CONTROL Resonant save editor'
 MAX_SIZE = 16 * 1024 * 1024
 MAX_ITEM_AMOUNT = 999999
 SLOT_SUFFIXES = ('persi-global', 'header', 'bundle-container', 'player')
@@ -126,9 +143,9 @@ def read_slot(source: Path, save: Save) -> dict[str, bytes]:
         raise ValueError('Source changed during read; try a stable backup')
     return files
 
-def write_export(exports: Path, label: str, source_name: str, files: dict[str, bytes],
-                 edited: bytes, manifest: dict) -> Path:
-    """Write a new timestamped slot copy; never replaces an existing file."""
+def write_export(label: str, source_name: str, files: dict[str, bytes], edited: bytes, manifest: dict) -> Path:
+    """Write a new timestamped slot copy under WORKSPACE/exports; never replaces an existing file."""
+    exports = WORKSPACE / 'exports'
     exports.mkdir(parents=True, exist_ok=True)
     stamp = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S%fZ') + label
     # Coarse clocks (older Pythons on Windows) can repeat a timestamp for back-to-back exports.
@@ -177,10 +194,10 @@ def export_slot_changes(source: Path, changes: dict[int, tuple[float, float]],
                              'identified_item': IDENTIFIED_ITEMS.get(key)}
                             for key, (expected, value) in changes.items() if expected != value],
                 'warning': 'Experimental; game loading is not yet validated. Unnamed fields have unconfirmed semantics.'}
-    return write_export(ROOT / 'exports', '', source.name, files, patched, manifest)
+    return write_export('', source.name, files, patched, manifest)
 
 def main():
-    p = argparse.ArgumentParser(description=__doc__)
+    p = argparse.ArgumentParser(prog='control-resonant-save', description=__doc__)
     sub = p.add_subparsers(dest='command', required=True)
     inspect = sub.add_parser('inspect', help='Validate and list numeric facts')
     inspect.add_argument('save', type=Path)
